@@ -7,10 +7,11 @@ Este projeto é um desafio de construção de uma API de Comunicação.
 ### 🛠 Tecnologias
 
 - Java 8
-- SpringBoot
+- Spring Boot
 - JPA
 - Hibernate
 - JUnit 5
+- Swagger
 
 ### ⚙️ Funcionalidades
 
@@ -18,12 +19,6 @@ Este projeto é um desafio de construção de uma API de Comunicação.
 - [x] Agendar uma comunicação
 - [x] Cancelar uma comunicação
 - [x] Consultar uma comunicação
-
-
-### 🎨 Layout
-
-
-
 
 ### 🚀 Como executar o projeto
 
@@ -35,19 +30,20 @@ Recomenda-se utilizar o Postman para inserção e consulta através de JSON.
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 - [GitHub](https://desktop.github.com/)
-- [Postman](https://www.postman.com/downloads/)
 - [PostgreSQL](https://www.postgresql.org/)
 - [Spring Tool Suite](https://spring.io/tools)
+- [Swagger](https://swagger.io/tools/swagger-ui/download/)
+- [Postman](https://www.postman.com/downloads/)
 
 
 #### Configure o PostgreSQL
 
-Crie uma base de dados com o nome desafio. 
+Crie uma base de dados com o nome ``desafio``. 
 
-Abra o arquivo src/main/resources/application.properties e ajuste o spring datasource username e password pelo do usuário de sua instalação PostgreSQL.
-
+Abra o arquivo ``src/main/resources/application.properties`` e ajuste o spring datasource ``username`` e ``password`` pelo do usuário de sua instalação PostgreSQL.
 
 #### Clone este repositório
+
 https://github.com/ariadners/desafio-api-comunicacao
 
 ``` bash
@@ -65,8 +61,9 @@ $ java -jar target/comunicacao-api-0.0.1-SNAPSHOT.jar
 
 #### API
 
-Utilize o [Postman](https://www.postman.com/downloads/) para executar os testes na API.
+A documentação da API está disponível em http://localhost:8080/swagger-ui.html
 
+Pode ser utilizado o Swagger ou o [Postman](https://www.postman.com/downloads/) para executar os testes na API.
 
 ### Autora
 
